@@ -73,7 +73,7 @@ function App() {
     }
 
     percentChange = Math.abs(percentChange);
-    percentChange = percentChange.toFixed(2) || 0.00;
+    percentChange = !percentChange ? '0.00' : percentChange.toFixed(1-Math.floor(Math.log(percentChange)/Math.log(10)));
     const flooredPrice = Math.floor(latestPrice);
     const decimals = `${(latestPrice - flooredPrice).toFixed(2)}`.split('').slice(1).join('');
     latestPrice = `${flooredPrice.toLocaleString()}${decimals}`;

@@ -2,7 +2,6 @@
   margin: 0 auto;
   max-width: 1000px;
   width: 100vw;
-  /* position: relative; */
 }
 
 .App {
@@ -25,6 +24,10 @@
   justify-content: flex-end;
   align-items: center;
   line-height: 30px;
+}
+
+.change img {
+  margin-right: 4px;
 }
 
 .percent {
