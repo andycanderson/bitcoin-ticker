@@ -5,9 +5,10 @@
 }
 
 .App {
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
+ 
 }
 
 .price {

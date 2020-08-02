@@ -35,7 +35,7 @@ function App() {
         timeoutIdRef.current = setTimeout(() => {
           fetchData();
         }, POLLING_INTERVAL);
-        
+
         setData([...dataRef.current, {
           y: +resp.data.amount,
           x: moment(),
@@ -114,8 +114,6 @@ function App() {
               <VictoryLine
                 animate={{
                   duration: 2000,
-                  onEnter: {    duration: 1000 
-                  },
                 }}
                 data={data}
                 style={chartStyles.line}
