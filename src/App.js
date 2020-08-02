@@ -6,7 +6,7 @@ import './App.css';
 import moment from 'moment';
 import { getXAxis, getYAxis, chartStyles } from './helpers/line';
 
-const POLLING_INTERVAL = 15000;
+const POLLING_INTERVAL = 20000;
 const X_AXIS_INTERVAL = POLLING_INTERVAL * 10 / 1000;
 
 function App() {
